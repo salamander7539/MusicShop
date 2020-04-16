@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:onClick="clearText"
+        android:inputType="textPersonName"
+        android:text="Your Name" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            app:srcCompat="@drawable/image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:text="Sale - 30"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            app:fontFamily="@font/aclonica" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select item"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/goodsimageView"
+        android:layout_width="132dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="135dp"
+        app:srcCompat="@drawable/guitar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:textSize="20dp"
+            android:text="Order Price"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="Quantity"
+
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 $"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_below="@id/textView2"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/QuantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="-50dp"
+            android:layout_toLeftOf="@id/textView3"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonminus"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:onClick="decreaseQuantity"
+            android:layout_toLeftOf="@id/QuantityTextView"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/buttonplus"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:onClick="increaseQuantity"
+            android:text="+"
+            android:layout_toRightOf="@id/QuantityTextView" />
+
+        <Button
+            android:id="@+id/AddButton"
+            android:onClick="addToCard"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Add to Card"
+            android:layout_below="@id/buttonplus"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

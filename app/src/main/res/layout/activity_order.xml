@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".OrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+            app:srcCompat="@drawable/image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Order Price"
+            android:textColor="@android:color/black"
+            android:textSize="35sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/orderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@android:color/black"
+            android:textSize="20dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="400dp"
+            android:layout_marginTop="500dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:layout_centerHorizontal="true"
+            android:text="Submit Order" />
+
+    </RelativeLayout>
+
+</LinearLayout>
